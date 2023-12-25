@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  /*font-family: "Roboto", sans-serif;*/
+  font-family: "lato", sans-serif;
+}
+
+/* Navbar Start */
+#navbar {
+  background: #f9f9f9;
+}
+#logo {
+  font-size: 36px;
+  font-weight: 550px;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+#logo span {
+  color: #ffa500;
+}
+.navbar-toggler {
+  color: #ffa500;
+}
+.navbar-nav {
+  margin-left: 20px;
+}
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 1px;
+  transition: 0.5s ease;
+}
+.nav-item .nav-link:hover {
+  background: #ffa500;
+  color: #f9f9f9;
+}
+#navbar form button {
+  background: orange;
+  color: white;
+  border: none;
+}
+/* Navbar End */
+
+/* Home Section Start */
+.home {
+  width: 100%;
+  height: 90vh;
+  background-image: url(backgroundimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+.home .content h5 {
+  color: #f9f9f9;
+  font-size: 38px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+}
+.home .content h1 {
+  color: #f9f9f9;
+  font-size: 70px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+
+.changecontent::after {
+  content: " ";
+  color: #ffa500;
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+  0% {
+    content: "france";
+  }
+  10% {
+    content: "Spain";
+  }
+  20% {
+    content: "United States";
+  }
+  30% {
+    content: "China";
+  }
+  40% {
+    content: "India";
+  }
+  50% {
+    content: "Bail";
+  }
+  60% {
+    content: "Maldives";
+  }
+  70% {
+    content: "Mexico";
+  }
+  80% {
+    content: "United Kingdom";
+  }
+  90% {
+    content: "france";
+  }
+  100% {
+    content: "france";
+  }
+}
+
+.home .content p {
+  color: #f9f9f9;
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.home .content a {
+  padding: 10px;
+  background: white;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.home .content .a:hover {
+  background: #ffa500;
+  color: #f9f9f9;
+}
+
+@media (max-width: 850px) {
+  .home {
+    background-position: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .home .content h5 {
+    font-size: 25px;
+  }
+  .home .content h1 {
+    font-size: 38px;
+  }
+  .home .content p {
+    font-size: 13px;
+  }
+}
+/* Home Section End */
+
+/* Section Book Start */
+body {
+  background: #f9f9f9;
+  padding: 50px;
+}
+.main-text h1 {
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+}
+
+.main-text h1 span {
+  color: #ffa500;
+}
+.book .card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+.book .row {
+  margin-top: 30px;
+}
+.book form input {
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea {
+  border: none;
+  border: radius 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 200px;
+}
+
+.book .submit {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 550;
+  background: #ffa500;
+  color: #f9f9f9;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.book .submit:hover {
+  width: 170px;
+}
+@media (max-width: 760px) {
+  .book {
+    padding: 0;
+  }
+  .main-text h1 {
+    padding: 20px;
+  }
+}
+/* Section Book End */
+
+/*Section packages Start */
+.main-text h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+}
+.main-text h1 span {
+  color: #ffa500;
+}
+.package .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.package .card img {
+  border-radius: 5px;
+}
+.package .card .card-body {
+  background: transparent;
+}
+.package .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.package .card .card-body p {
+  font-size: 15px;
+}
+.checked {
+  color: #ffa500;
+}
+.star i {
+  font-size: 15px;
+}
+.package .card .card-body h6 {
+  font-size: 20px;
+}
+.package .card .card-body {
+  padding: 10px;
+  text-decoration: none;
+  background: #ffa500;
+  color: #f9f9f9;
+  border-radius: 5px;
+}
+/* Section packages End */
+
+/* Section Services Start */
+.services {
+  background: #f9f9f9;
+  margin-top: 50px;
+}
+.services .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+}
+.services .card i {
+  font-size: 80px;
+  text-align: center;
+  color: #ffa500;
+  padding: 20px;
+}
+.services .card .card-body h3 {
+  font-weight: 600;
+}
+.services .card .card-body {
+  text-align: center;
+}
+/* Section Services End */
+
+/* section galary Start */
+.gallary {
+  margin-top: 50px;
+}
+.gallary .card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+.gallary .card img {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.gallary .card img:hover {
+  transform: scale(1.1);
+}
+/* section galary Start */
+
+/* About Start */
+.about {
+  padding: 50px;
+  /*margin-top: 50px;*/
+  background: #f9f9f9;
+}
+.about .card {
+  border-radius: 10px;
+}
+.about .card img {
+  border-radius: 10px;
+}
+.about h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about p {
+  font: 500;
+}
+#about-btn {
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: #ffa500;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s easy;
+  cursor: pointer;
+}
+#about-btn:hover {
+  width: 170px;
+}
+@media (max-width: 760px) {
+  .about {
+    padding: 0;
+  }
+}
+/* About Start */
+
+/* Footer Start*/
+#footer {
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+  background: #f9f9f9;
+}
+#footer h1 {
+  font-weight: 600;
+  padding-top: 30px;
+  text-shadow: 0px 0px 1px black;
+}
+#footer h1 span {
+  color: #ffa500;
+}
+.social-links i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: black;
+  color: #f9f9f9;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.social-links i:hover {
+  background: #ffa500;
+}
+/* Footer End*/
